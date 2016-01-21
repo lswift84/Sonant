@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!-- first card, pre programmed sounds-->
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fixed_card"
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        card_view:cardBackgroundColor="#FFFFFF"
+        card_view:cardElevation="22dp"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="4dp" >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/xmas" />
+
+    </android.support.v7.widget.CardView>
+        <TextView
+            android:id="@+id/info_text_fixed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+<!-- second card, user programmed sounds-->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/user_card"
+            android:layout_gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            card_view:cardBackgroundColor="#FFFFFF"
+            card_view:cardElevation="22dp"
+            android:layout_margin="10dp"
+            card_view:cardCornerRadius="4dp" >
+        </android.support.v7.widget.CardView>
+        <TextView
+            android:id="@+id/info_text_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
