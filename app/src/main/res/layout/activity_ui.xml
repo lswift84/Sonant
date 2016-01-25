@@ -7,6 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 <!-- first card, pre programmed sounds-->
+
     <android.support.v7.widget.CardView
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:id="@+id/fixed_card"
@@ -35,9 +36,26 @@
             android:textAlignment="center"
             android:textSize="24sp"
             android:text="This is MY card" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bark 1"
+            android:onClick="playsnd"
+            android:id="@+id/button_one"
+            android:layout_gravity="bottom"
+            android:textColor="#FFFFFF" />
+
     </android.support.v7.widget.CardView>
-<!-- adspace card-->
-    <android.support.v7.widget.CardView
+
+
+    <!--android:layout_alignBottom="@+id/card_view"-->
+
+
+
+    <!-- adspace card-->
+
+    <!--<android.support.v7.widget.CardView-->
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:id="@+id/ad_card_one"
         android:layout_gravity="top"
@@ -56,7 +74,7 @@
             android:layout_alignParentTop="true"
             android:scaleType="centerCrop"
             android:src="@drawable/xmas" />-->
-        <TextView
+        <!--<TextView-->
             android:id="@+id/info_text"
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
@@ -65,9 +83,10 @@
             android:textAlignment="center"
             android:textSize="24sp"
             android:text="$$$$$$$$" />
-    </android.support.v7.widget.CardView>
+    <!--</android.support.v7.widget.CardView>-->
 <!-- second card, user programmed sounds-->
-    <android.support.v7.widget.CardView
+
+    <!--<android.support.v7.widget.CardView-->
             xmlns:card_view="http://schemas.android.com/apk/res-auto"
             android:id="@+id/user_card"
             android:layout_width="match_parent"
@@ -76,16 +95,23 @@
             card_view:cardElevation="22dp"
             android:layout_margin="10dp"
             card_view:cardCornerRadius="4dp" >
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:scaleType="centerCrop"
-            android:src="@drawable/speak" />
-        <TextView
+
+        <!--<TextView-->
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/textView" />
+
+        <!--<TextView-->
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/textView2"
+            android:gravity="top" />
+
+        <!--<TextView-->
             android:id="@+id/info_text"
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
@@ -94,6 +120,17 @@
             android:textAlignment="center"
             android:textSize="24sp"
             android:text="This the users card" />
-        </android.support.v7.widget.CardView>
-    </LinearLayout>
+
+        <!--<ImageView-->
+            android:id="@+id/imageView"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/speak"
+            android:foregroundGravity="top" />
+    <!--</android.support.v7.widget.CardView>-->
+</LinearLayout>
 
