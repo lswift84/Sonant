@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,8 +10,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-<!-- first card, pre programmed sounds-->
 
+<!-- first card, pre programmed sounds-->
     <android.support.v7.widget.CardView
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:id="@+id/fixed_card"
@@ -15,11 +19,11 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         card_view:cardBackgroundColor="#FFFFFF"
-        card_view:cardElevation="22dp"
+        card_view:cardElevation="5dp"
         android:layout_margin="10dp"
         card_view:cardCornerRadius="4dp" >
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/fixedimage"
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
             android:layout_alignParentLeft="true"
@@ -28,7 +32,7 @@
             android:scaleType="centerCrop"
             android:src="@drawable/xmas" />
         <TextView
-            android:id="@+id/info_text"
+            android:id="@+id/fixed_text"
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
             android:textColor="#ffffff"
@@ -36,46 +40,54 @@
             android:textAlignment="center"
             android:textSize="24sp"
             android:text="This is MY card" />
-
         <Button
+            android:id="@+id/fixed_button_one"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Bark 1"
+            android:layout_height="36dp"
             android:onClick="playsnd"
-            android:id="@+id/button_one"
-            android:layout_gravity="bottom"
-            android:textColor="#FFFFFF" />
-
+            android:layout_centerInParent="true"
+            android:layout_gravity="bottom|left"
+            android:layout_marginBottom="5dp"
+            android:text="CAN"
+            android:textColor="#000000"
+            android:background="@android:color/white" />
+        <Button
+            android:id="@+id/fixed_button_two"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:onClick="playsnd"
+            android:layout_centerInParent="true"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="5dp"
+            android:text="HAZ"
+            android:textColor="#000000"
+            android:background="@android:color/white" />
+        <Button
+            android:id="@+id/fixed_button_three"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:onClick="playsnd"
+            android:layout_centerInParent="true"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="5dp"
+            android:text="HOTDOG"
+            android:textColor="#000000"
+            android:background="@android:color/white" />
     </android.support.v7.widget.CardView>
 
-
-    <!--android:layout_alignBottom="@+id/card_view"-->
-
-
-
-    <!-- adspace card-->
-
-    <!--<android.support.v7.widget.CardView-->
+<!-- adspace card-->
+    <android.support.v7.widget.CardView
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:id="@+id/ad_card_one"
         android:layout_gravity="top"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         card_view:cardBackgroundColor="#FFFFFF"
-        card_view:cardElevation="22dp"
-        android:layout_margin="10dp"
+        card_view:cardElevation="5dp"
+        android:layout_margin="5dp"
         card_view:cardCornerRadius="4dp" >
-        <!--<ImageView
-            android:id="@+id/imageView"
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:scaleType="centerCrop"
-            android:src="@drawable/xmas" />-->
-        <!--<TextView-->
-            android:id="@+id/info_text"
+        <TextView
+            android:id="@+id/ad_text_one"
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
             android:textColor="#009933"
@@ -83,46 +95,19 @@
             android:textAlignment="center"
             android:textSize="24sp"
             android:text="$$$$$$$$" />
-    <!--</android.support.v7.widget.CardView>-->
-<!-- second card, user programmed sounds-->
+    </android.support.v7.widget.CardView>
 
-    <!--<android.support.v7.widget.CardView-->
+<!-- second card, user programmed sounds-->
+    <android.support.v7.widget.CardView
             xmlns:card_view="http://schemas.android.com/apk/res-auto"
             android:id="@+id/user_card"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             card_view:cardBackgroundColor="#FFFFFF"
-            card_view:cardElevation="22dp"
-            android:layout_margin="10dp"
-            card_view:cardCornerRadius="4dp" >
-
-        <!--<TextView-->
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Medium Text"
-            android:id="@+id/textView" />
-
-        <!--<TextView-->
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Large Text"
-            android:id="@+id/textView2"
-            android:gravity="top" />
-
-        <!--<TextView-->
-            android:id="@+id/info_text"
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:textColor="#ffffff"
-            android:gravity="center_vertical"
-            android:textAlignment="center"
-            android:textSize="24sp"
-            android:text="This the users card" />
-
-        <!--<ImageView-->
-            android:id="@+id/imageView"
+            card_view:cardElevation="5dp"
+            android:layout_margin="10dp">
+        <ImageView
+            android:id="@+id/userimage"
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
             android:layout_alignParentLeft="true"
@@ -131,6 +116,131 @@
             android:scaleType="centerCrop"
             android:src="@drawable/speak"
             android:foregroundGravity="top" />
-    <!--</android.support.v7.widget.CardView>-->
+        <TextView
+            android:id="@+id/user_text"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:text="This the users card" />
+        <Button
+            android:id="@+id/user_button_one"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:onClick="playsnd"
+            android:layout_centerInParent="true"
+            android:layout_gravity="bottom|left"
+            android:layout_marginBottom="5dp"
+            android:text="CAN"
+            android:textColor="#000000"
+            android:background="@android:color/white" />
+        <Button
+            android:id="@+id/user_button_two"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:onClick="playsnd"
+            android:layout_centerInParent="true"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="5dp"
+            android:text="HAZ"
+            android:textColor="#000000"
+            android:background="@android:color/white" />
+        <Button
+            android:id="@+id/user_button_three"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:onClick="playsnd"
+            android:layout_centerInParent="true"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="5dp"
+            android:text="HOTDOG"
+            android:textColor="#000000"
+            android:background="@android:color/white" />
+    </android.support.v7.widget.CardView>
+
+
+    <!-- adspace card 2-->
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ad_card_two"
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#FFFFFF"
+        card_view:cardElevation="5dp"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="4dp" >
+        <TextView
+            android:id="@+id/ad_text_two"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:textColor="#009933"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:text="$$$$$$$$" />
+    </android.support.v7.widget.CardView>
+
+
+<!-- scroll test-->
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/scrollcard_card"
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        card_view:cardBackgroundColor="#FFFFFF"
+        card_view:cardElevation="5dp"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="4dp" >
+        <ImageView
+            android:id="@+id/fixedimage"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/xmas" />
+        <TextView
+            android:id="@+id/fixed_text"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:text="This is MY card" />
+
+    </android.support.v7.widget.CardView>
+
+
+<!-- adspace card 3-->
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ad_card_three"
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#FFFFFF"
+        card_view:cardElevation="5dp"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="4dp" >
+        <TextView
+            android:id="@+id/ad_text_three"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:textColor="#009933"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:text="$$$$$$$$ ;)" />
+    </android.support.v7.widget.CardView>
+
+
+
 </LinearLayout>
 
+</ScrollView>
