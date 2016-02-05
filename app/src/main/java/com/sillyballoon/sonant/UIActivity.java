@@ -1,8 +1,9 @@
 package com.sillyballoon.sonant;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
+//declare main UI activity
 public class UIActivity extends AppCompatActivity {
 
     @Override
@@ -11,3 +12,5 @@ public class UIActivity extends AppCompatActivity {
         setContentView(R.layout.activity_ui);
     }
 }
+
+
