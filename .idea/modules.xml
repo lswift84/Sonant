@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Sonant.iml" filepath="$PROJECT_DIR$/Sonant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sonant/Sonant.iml" filepath="$PROJECT_DIR$/Sonant/Sonant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sonant_beta_1.0.iml" filepath="$PROJECT_DIR$/Sonant_beta_1.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
